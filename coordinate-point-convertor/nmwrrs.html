@@ -1,0 +1,261 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+   
+   
+      
+   
+   
+   
+
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>UTM Conversion Tool</title>
+        <LINK rel="stylesheet" type="text/css" href="css/utmLocTool.css">
+        <!-- This parameter file gets its values from the project-wide
+'config/iWaters.properties' file so all the values are referenced
+in one place.
+-->
+
+
+
+
+  
+
+<script language="javascript">
+      
+// for NM state - Latitude/Longitude degrees/minutes/seconds      
+  var latdmin = 31              //31 
+  var latdmax = 37              //37
+  var londmin = 103              //103 
+  var londmax = 110              //108
+  var min00   = 0           //0
+  var max59   = 59           //59
+  
+// for NM state - NAD27 NMSP Coordinate System
+//     East Zone  
+  var sp27eastxmin = 71000   //71000
+  var sp27eastxmax = 904000   //904000 
+  var sp27eastymin = 355000   //355000
+  var sp27eastymax = 2193000   //2193000
+
+//     Central Zone
+  var sp27cntrxmin = 45400   //45400
+  var sp27cntrxmax = 945000   //945000 
+  var sp27cntrymin = 278000   //278000
+  var sp27cntrymax = 2195000   //2195000
+
+//     West Zone
+  var sp27westxmin = 114000   //114000
+  var sp27westxmax = 967000   //967000
+  var sp27westymin = 116000   //116000
+  var sp27westymax = 2200000   //2200000
+
+// for NM state - NAD83 NMSP Coordinate System
+//     East Zone
+  var sp83eastxmin = 112000  //112000
+  var sp83eastxmax = 945000  //945000
+  var sp83eastymin = 355000  //355000
+  var sp83eastymax = 2193000  //2193000
+
+//     Central Zone
+  var sp83cntrxmin = 1186000  //1186000
+  var sp83cntrxmax = 2085000  //2085000
+  var sp83cntrymin = 278000  //278000
+  var sp83cntrymax = 2195000  //2195000
+
+//     West Zone
+  var sp83westxmin = 2330000  //2330000
+  var sp83westxmax = 3190000  //3190000
+  var sp83westymin = 116000  //116000
+  var sp83westymax = 2200000  //2200000
+
+// for NM state - NAD27 UTM  
+//     Zone 12 
+  var utm2712xmin = 670000   //670000
+  var utm2712xmax = 790000   //790000
+  var utm2712ymin = 3465000   //3465000
+  var utm2712ymax = 4102000   //4102000
+
+//     Zone 13 - NOTE:  These values are ALMOST the same as the NAD83 UTM values.
+//                      The 'max-Y' values are slightly different.
+  var utm2713xmin = 111000   //111000
+  var utm2713xmax = 686000   //686000
+  var utm2713ymin = 3468000   //3468000
+  var utm2713ymax = 4105800   //4105800
+
+</script>
+
+        <script language="Javascript" src="jscript/utmLocTool.js"> </script>
+            
+
+    </head>
+    
+    <body onload="javascript:startUp();">
+    <form method="post" action="ConvertUTMDispatcher" name="utmLocTool">
+    
+    <input type="hidden" name="submitbutton" value="plss">   <!-- Needed to determine which radio button to activate. -->
+    
+    <div id="box" align="center">
+      <div id="searchtop" align="center">
+          
+          <h1><b>Public Land Survey System (PLSS)</b></h1>
+          <b><p class="bcopy">
+          <input type="radio" id="radio" name="radinpt" value="plss" onclick="javascript:updateScreen();javascript:resetNAD83()" onfocus="javascript:currentField()">
+           &nbsp;&nbsp;
+           Q64:
+          <select name= "q64" id= "q64"><option value="" selected="yes"></option><option value="1" >NW</option><option value="2" >NE</option><option value="3" >SW</option><option value="4" >SE</option></select>  
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           Q16:
+          <select name= "q16" id= "q16"><option value="" selected="yes"></option><option value="1" >NW</option><option value="2" >NE</option><option value="3" >SW</option><option value="4" >SE</option></select>  
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           Q4:
+          <select name= "q4" id= "q4"><option value="" selected="yes"></option><option value="1" >NW</option><option value="2" >NE</option><option value="3" >SW</option><option value="4" >SE</option></select>               
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           Sec:
+           <select name= "sec" id= "sec"><option value="" selected="yes"></option><option value="01" >01</option><option value="02" >02</option><option value="03" >03</option><option value="04" >04</option><option value="05" >05</option><option value="06" >06</option><option value="07" >07</option><option value="08" >08</option><option value="09" >09</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option><option value="32" >32</option><option value="33" >33</option><option value="34" >34</option><option value="35" >35</option><option value="36" >36</option></select>                   
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           Tws:
+          <select name= "tws" id= "tws"><option value="" selected="yes"></option><option value="01N" >01N</option><option value="02N" >02N</option><option value="03N" >03N</option><option value="04N" >04N</option><option value="05N" >05N</option><option value="06N" >06N</option><option value="07N" >07N</option><option value="08N" >08N</option><option value="09N" >09N</option><option value="10N" >10N</option><option value="11N" >11N</option><option value="12N" >12N</option><option value="13N" >13N</option><option value="14N" >14N</option><option value="15N" >15N</option><option value="16N" >16N</option><option value="17N" >17N</option><option value="18N" >18N</option><option value="19N" >19N</option><option value="20N" >20N</option><option value="21N" >21N</option><option value="22N" >22N</option><option value="23N" >23N</option><option value="24N" >24N</option><option value="25N" >25N</option><option value="26N" >26N</option><option value="27N" >27N</option><option value="28N" >28N</option><option value="29N" >29N</option><option value="30N" >30N</option><option value="31N" >31N</option><option value="32N" >32N</option><option value="01S" >01S</option><option value="02S" >02S</option><option value="03S" >03S</option><option value="04S" >04S</option><option value="05S" >05S</option><option value="06S" >06S</option><option value="07S" >07S</option><option value="08S" >08S</option><option value="09S" >09S</option><option value="10S" >10S</option><option value="11S" >11S</option><option value="12S" >12S</option><option value="13S" >13S</option><option value="14S" >14S</option><option value="15S" >15S</option><option value="16S" >16S</option><option value="17S" >17S</option><option value="18S" >18S</option><option value="19S" >19S</option><option value="20S" >20S</option><option value="21S" >21S</option><option value="22S" >22S</option><option value="23S" >23S</option><option value="24S" >24S</option><option value="25S" >25S</option><option value="26S" >26S</option><option value="27S" >27S</option><option value="28S" >28S</option><option value="29S" >29S</option><option value="30S" >30S</option><option value="31S" >31S</option><option value="32S" >32S</option><option value="33S" >33S</option><option value="34S" >34S</option></select>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           Rng:</b>
+          <select name= "rng" id= "rng"><option value="" selected="yes"></option><option value="01E" >01E</option><option value="02E" >02E</option><option value="03E" >03E</option><option value="04E" >04E</option><option value="05E" >05E</option><option value="06E" >06E</option><option value="07E" >07E</option><option value="08E" >08E</option><option value="09E" >09E</option><option value="10E" >10E</option><option value="11E" >11E</option><option value="12E" >12E</option><option value="13E" >13E</option><option value="14E" >14E</option><option value="15E" >15E</option><option value="16E" >16E</option><option value="17E" >17E</option><option value="18E" >18E</option><option value="19E" >19E</option><option value="20E" >20E</option><option value="21E" >21E</option><option value="22E" >22E</option><option value="23E" >23E</option><option value="24E" >24E</option><option value="25E" >25E</option><option value="26E" >26E</option><option value="27E" >27E</option><option value="28E" >28E</option><option value="29E" >29E</option><option value="30E" >30E</option><option value="31E" >31E</option><option value="32E" >32E</option><option value="33E" >33E</option><option value="34E" >34E</option><option value="35E" >35E</option><option value="36E" >36E</option><option value="37E" >37E</option><option value="38E" >38E</option><option value="39E" >39E</option><option value="01W" >01W</option><option value="02W" >02W</option><option value="03W" >03W</option><option value="04W" >04W</option><option value="05W" >05W</option><option value="06W" >06W</option><option value="07W" >07W</option><option value="08W" >08W</option><option value="09W" >09W</option><option value="10W" >10W</option><option value="11W" >11W</option><option value="12W" >12W</option><option value="13W" >13W</option><option value="14W" >14W</option><option value="15W" >15W</option><option value="16W" >16W</option><option value="17W" >17W</option><option value="18W" >18W</option><option value="19W" >19W</option><option value="20W" >20W</option><option value="21W" >21W</option><option value="22W" >22W</option></select>  
+          <br><br>          
+      </div>
+
+      <div id="searchtop" align="center">
+          
+          <h1><b>State Plane Coordinate System - NAD27</b></h1>
+          <b><p class="bcopy">
+          <input type="radio" id="radio" name="radinpt" value="spcs27" onclick="javascript:updateScreen();javascript:resetNAD83();">    
+           &nbsp;&nbsp;X:
+          <input type="text" name="spcs27X" size=07 value="0"> ft &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;Y:
+          <input type="text" name="spcs27Y" size=07 value="0"> ft &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zone:</b>
+          <select name= "cs_sp27"><option value="" selected="yes"></option><option value="1" >NAD_1927_SP_FT_NM_East</option><option value="2" >NAD_1927_SP_FT_NM_Central</option><option value="3" >NAD_1927_SP_FT_NM_West</option></select>
+          <br><br>    
+      </div>
+
+      <div id="searchtop" align="center">
+          
+          <h1><b>State Plane Coordinate System - NAD83</b></h1>
+          <b><p class="bcopy">
+          <input type="radio" id="radio" name="radinpt" value="spcs83" onclick="javascript:updateScreen();javascript:resetNAD83();">    
+           &nbsp;&nbsp;X:
+          <input type="text" name="spcs83X" size=07 value="0"> ft &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;Y:
+          <input type="text" name="spcs83Y" size=07 value="0"> ft &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zone:</b>
+          <select name= "cs_sp83"><option value="" selected="yes"></option><option value="1" >NAD_1983_SP_FT_NM_East</option><option value="2" >NAD_1983_SP_FT_NM_Central</option><option value="3" >NAD_1983_SP_FT_NM_West</option></select>
+          <br><br>    
+      </div>
+      
+      <div id="searchtop" align="center">
+          <h1><b>Degrees/Minutes/Seconds</b></h1>
+          <b><p class="bcopy">
+          <input type="radio" id="radio" name="radinpt" value="dms" onclick="javascript:updateScreen();javascript:resetNAD83();"> 
+           &nbsp;&nbsp;Longitude (X):
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           Degrees:
+           <input type="text" name="londeg" size=02 value="0"> &deg;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           Minutes:
+           <input type="text" name="lonmin" size=02 value="0"> '&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           Seconds:
+           <input type="text" name="lonsec" size=02 value="0"> "&nbsp;
+           
+          <br><br></b>
+    
+          <b><p class="bcopy">
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latitude (Y):
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           Degrees:
+           <input type="text" name="latdeg" size=02 value="0"> &deg;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           Minutes:
+           <input type="text" name="latmin" size=02 value="0"> '&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           Seconds:
+           <input type="text" name="latsec" size=02 value="0"> "&nbsp;
+          </b>
+          <br><br>    
+      </div>
+      <!--  commented out by jlindsay since conversion were not working properly in this section till Diana gets back to work on it-->
+     <div id="searchmiddle" align="center">  
+          
+          <h1><b>UTM - NAD27</b></h1>
+          <b><p class="bcopy">
+          <input type="radio" id="radio" name="radinpt" value="utm27"  onclick="javascript:updateScreen();javascript:resetNAD83();">           
+           &nbsp;&nbsp;Easting (X):
+          <input type="text" name="utm27e" size=07 value="0"> mtrs 
+           &nbsp;&nbsp;Northing (Y):
+          <input type="text" name="utm27n" size=07 value="0"> mtrs 
+           &nbsp;&nbsp;Zone:</b>
+          <select name= "cs_utm27"><option value="" selected="yes"></option><option value="1" >NAD_1927_UTM_Zone_12N</option><option value="2" >NAD_1927_UTM_Zone_13N</option></select>
+          <br><br>    
+      </div>
+
+      <div align="center">
+        <a href="javascript:validateData()"> <img name="Submit" src="images/submit.gif" border="0"> </a> 
+      </div>
+     
+      <div id="searchbottom" align="center">
+      
+      <h1><b>All Conversion Results are displayed as <u>NAD 1983 UTM Zone 13</u></b></h1>          
+      
+      
+         
+
+      
+      <input type="hidden" name="type" value="display">   <!-- Needed to determine which result screen is displayed. -->
+     
+      <b>
+      <div id="label">    
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </div>
+      <div id="label">    
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </div>                   
+      <div id="label">
+         Easting (X):
+      </div>           
+      <div id="xDisplay"> 
+         &nbsp;0.0 
+      </div>
+      <div id="label">    
+         mtrs  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </div>
+      <div id="label">    
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </div>
+      <div id="label">    
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </div>
+      <div id="label">
+         Northing (Y):
+      </div> 
+      <div id="yDisplay">
+         &nbsp;0.0
+      </div> 
+      <div id="label">    
+        mtrs 
+      </div>
+ 
+
+               
+      
+      <br><br>
+      <h2>~~ Please keep screen open to copy UTM values for Reports. ~~</h2>                      
+      </div>
+    </div>  
+    </form>
+    </body>
+</html>

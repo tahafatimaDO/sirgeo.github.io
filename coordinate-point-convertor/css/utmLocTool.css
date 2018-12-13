@@ -1,0 +1,157 @@
+h1 {
+	font-size:14px;
+	padding-top:10px;
+	font-family: arial;
+	color: #302B54;
+	}
+
+h2 {
+	font-size:12px;
+/*	padding-top:10px;  */
+	text-align:center;
+	}
+
+h3 {
+        font-size:22px;
+        padding-top:10px;
+	
+        }
+
+body {
+	/* text-align:center;  */
+     /* background: #CCCCCC; */
+	/* background: #999999;  */  /* dark gray  */
+    background-image:url("../images/litepurple.jpg"); background-attachment: fixed;
+
+	}
+
+#logo { 
+  	width:158px;
+  	padding:0px;
+	float:left;
+	text-align:center;
+    background-image:url("WRLookup-Logo-sm.gif"); background-repeat: no repeat;   
+	}	 
+
+#box {
+	width:650px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:10px;
+	padding:0px;
+	text-align:center;
+	background : #003366;
+	border: gray; border-width: thin; border-style: solid;
+
+	}
+
+#searchtop {
+  	width: 636px;
+  	margin-top: 5px;
+        margin-bottom: 0px;        
+	padding: 0px;
+	float: center;
+	text-align: center;    
+	font-family: arial;
+  	background : #E6E6FA;
+  	color: #302B54;
+  	border: gray; border-width: thin; border-style: solid;
+	}
+        
+#searchmiddle {
+  	width: 636px;
+        margin-top: 5px;
+  	margin-bottom: 5px;
+	padding: 0px;
+	float: center;
+	text-align: center;
+	font-family: arial;
+  	background : #E6E6FA;
+  	color: #302B54;
+  	border: gray; border-width: thin; border-style: solid;
+	}
+
+#searchbottom {
+  	width: 636px;
+        margin-top: 0px;
+  	margin-bottom: 5px;   
+	padding: 0px;
+	float: center;
+	text-align: center;
+	font-family: arial;
+  	background : #B0C4DE;
+  	color: #302B54;
+  	border: gray; border-width: thin; border-style: solid;
+	}
+
+#xDisplay {
+    	font-size: 12px;   
+        font-family: arial;
+	float: left;   
+	margin: 0 0.15em;
+        background-color: #F5F5F5;      /*  WhiteSmoke;  */
+	height: 1.7em;
+	line-height: 1.7em;
+	width: 90px;
+	display: block;
+        border: #B3B3B3; border-width: 0.1em; border-style: solid;
+	color: black;
+	text-align: left;
+	} 
+#yDisplay {
+    	font-size: 12px;   
+        font-family: arial;
+	float: left;   
+	margin: 0 0.15em;
+        background-color: #F5F5F5;      /*  WhiteSmoke;  */
+	height: 1.7em;
+	line-height: 1.7em;
+	width: 90px;
+	display: block;
+        border: #B3B3B3; border-width: 0.1em; border-style: solid;
+	color: black;
+	text-align: left;
+	}
+
+#errDisplay {
+    	font-size: 12px;   
+        font-family: arial;
+	float: left;   
+	margin: 0 0.15em;
+        background-color: #F5F5F5;      /*  WhiteSmoke;  */
+	height: 1.7em;
+	line-height: 1.7em;
+	width: 400px;
+	display: block;
+        border: #B3B3B3; border-width: 0.1em; border-style: solid;
+	color: black;
+	text-align: left;
+	}        
+
+#label {
+    	font-size: 11px;   
+        font-family: arial;
+	font-weight: bold;     
+	float: left;   
+	margin: 0 0.15em;
+        background: #B0C4DE;    
+	height: 1.7em;
+	line-height: 1.7em;
+	color: #302B54;
+	text-align: left;  
+	}   
+.bcopy {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+text-align: justify;
+line-height: 12px;
+color: #302B54;
+}
+/*
+Link: The color of an un-visited link. 
+Visited: The color of a visited link. 
+Active: The color of the link when it is clicked. The link will remain that color when users hit the Back Button after visiting the link destination. 
+Hover: The color of the link when the mouse hovers over it.
+background : Changes the background color of the hyperlink.
+text-decoration : The none value removes the underline. 
+*/
