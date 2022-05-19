@@ -1,0 +1,80 @@
+{
+  "legend": {
+    "arrangement": 0,
+    "autoUpdate": true,
+    "respectCurrentMapScale": true
+  },
+  "layerState": {
+    "Water_GDB_7229": {
+      "selected": true
+    },
+    "Water_GDB_2390": {
+      "selected": true
+    },
+    "Water_GDB_9375": {
+      "selected": true
+    },
+    "BldgFootprint_5502": {
+      "selected": true
+    },
+    "Easements_gdb_3014": {
+      "selected": true
+    },
+    "Easements_GDB_-_Polygons_and_Lines_1658": {
+      "selected": true
+    },
+    "CityBoundary_6324": {
+      "selected": true
+    },
+    "Snoco_Neighborhoods_3930": {
+      "selected": true
+    },
+    "Water_GDB_9518": {
+      "selected": true
+    },
+    "Water_GDB_96": {
+      "selected": true
+    },
+    "Sewer_gdb_9959": {
+      "selected": true
+    },
+    "Sewer_gdb_7583": {
+      "selected": true
+    },
+    "Storm_gdb_5722": {
+      "selected": true
+    },
+    "Storm_gdb_9526": {
+      "selected": true
+    },
+    "Water_GDB_4803": {
+      "selected": true
+    },
+    "Sewer_gdb_5572": {
+      "selected": true
+    },
+    "Sewer_gdb_3280": {
+      "selected": true
+    },
+    "Storm_gdb_9767": {
+      "selected": true
+    },
+    "SnoCo_Pcl_Latest_Nov2021_for_AGOL_9360": {
+      "selected": true
+    },
+    "Generalize_LINES_parcels_1585": {
+      "selected": false
+    },
+    "Transportation_gdb_7639": {
+      "selected": true
+    },
+    "Cont2Ft_3610": {
+      "selected": true
+    },
+    "Storm_gdb_5824": {
+      "selected": true
+    }
+  },
+  "syncWithWebmap": false,
+  "showLegendForBasemap": true
+}

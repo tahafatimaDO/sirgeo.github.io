@@ -1,0 +1,2962 @@
+{
+  "layerInfos": [
+    {
+      "name": "Water_Meters",
+      "id": "Water_Meters_7289",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/Water_Meters/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "PARCELNO",
+            "alias": "PARCELNO",
+            "show": true
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "ADDR_ID",
+            "alias": "ADDR_ID",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MSize",
+            "alias": "MSize",
+            "show": true
+          },
+          {
+            "name": "MUNIS_ACCT",
+            "alias": "MUNIS_ACCT",
+            "show": true
+          },
+          {
+            "name": "RDM",
+            "alias": "RDM",
+            "show": true
+          },
+          {
+            "name": "Services",
+            "alias": "Services",
+            "show": true
+          },
+          {
+            "name": "MeterType",
+            "alias": "MeterType",
+            "show": true
+          },
+          {
+            "name": "Name",
+            "alias": "Name",
+            "show": true
+          },
+          {
+            "name": "RegisterSe",
+            "alias": "RegisterSe",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Address",
+            "alias": "Address",
+            "show": true
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "FID",
+      "isDescending": false
+    },
+    {
+      "name": "BldgFootprint",
+      "id": "BldgFootprint_5502",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/BldgFootprint/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "IsMLT",
+            "alias": "IsMLT",
+            "show": true
+          },
+          {
+            "name": "Bldg_Class",
+            "alias": "Bldg_Class",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "Yr_Built",
+            "alias": "Yr_Built",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "parcel_ID",
+            "alias": "parcel_ID",
+            "show": true
+          },
+          {
+            "name": "Is_Main_Bl",
+            "alias": "Is_Main_Bl",
+            "show": true
+          },
+          {
+            "name": "LAT",
+            "alias": "LAT",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "LONG",
+            "alias": "LONG",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Units",
+            "alias": "Units",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "HouseNum",
+            "alias": "HouseNum",
+            "show": true
+          },
+          {
+            "name": "GoogleStVi",
+            "alias": "GoogleStVi",
+            "show": true
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape_Area",
+            "alias": "Shape_Area",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape__Area",
+            "alias": "Shape__Area",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "FID",
+      "isDescending": false
+    },
+    {
+      "name": "Easements lines",
+      "id": "Easements_gdb_3014",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/Easements_gdb/FeatureServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false
+          },
+          {
+            "name": "EASEMEN_ID",
+            "alias": "EASEMEN_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": false
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID",
+      "isDescending": false
+    },
+    {
+      "name": "Public Easements",
+      "id": "Easements_gdb_6044",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/Easements_gdb/FeatureServer/1",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false
+          },
+          {
+            "name": "Ownership",
+            "alias": "Ownership",
+            "show": true
+          },
+          {
+            "name": "Type",
+            "alias": "Status",
+            "show": true
+          },
+          {
+            "name": "Status",
+            "alias": "Status",
+            "show": true
+          },
+          {
+            "name": "YearCreated",
+            "alias": "YearCreated",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "DeedNumber",
+            "alias": "DeedNumber",
+            "show": true
+          },
+          {
+            "name": "Question",
+            "alias": "Question",
+            "show": true
+          },
+          {
+            "name": "QSecWrong",
+            "alias": "QSecWrong",
+            "show": true
+          },
+          {
+            "name": "Comments",
+            "alias": "Comments",
+            "show": true
+          },
+          {
+            "name": "Hyperlink",
+            "alias": "Hyperlink",
+            "show": true
+          },
+          {
+            "name": "SHAPE__Area",
+            "alias": "SHAPE__Area",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SHAPE__Length",
+            "alias": "SHAPE__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID",
+      "isDescending": false
+    },
+    {
+      "name": "City Limits",
+      "id": "CityBoundary_6324",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/CityBoundary/FeatureServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false
+          },
+          {
+            "name": "BOUNDAR_ID",
+            "alias": "BOUNDAR_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID",
+      "isDescending": false
+    },
+    {
+      "name": "Snoco Neighborhoods",
+      "id": "Snoco_Neighborhoods_3930",
+      "layer": {
+        "url": "https://services7.arcgis.com/JL4XvjbjMVWH4R8h/arcgis/rest/services/Snoco_Neighborhoods/FeatureServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "Source",
+            "alias": "Source",
+            "show": false
+          },
+          {
+            "name": "DateUpdate",
+            "alias": "DateUpdate",
+            "show": false,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "Effective",
+            "alias": "Effective",
+            "show": false,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "Expire",
+            "alias": "Expire",
+            "show": false,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "NbrhdNGUID",
+            "alias": "NbrhdNGUID",
+            "show": false
+          },
+          {
+            "name": "Country",
+            "alias": "Country",
+            "show": false
+          },
+          {
+            "name": "State",
+            "alias": "State",
+            "show": false
+          },
+          {
+            "name": "County",
+            "alias": "County",
+            "show": false
+          },
+          {
+            "name": "AddCode",
+            "alias": "AddCode",
+            "show": false
+          },
+          {
+            "name": "Inc_Muni",
+            "alias": "Inc_Muni",
+            "show": false
+          },
+          {
+            "name": "Uninc_Comm",
+            "alias": "Uninc_Comm",
+            "show": false
+          },
+          {
+            "name": "Nbrhd_Comm",
+            "alias": "Nbrhd_Comm",
+            "show": true
+          },
+          {
+            "name": "GC_Exception",
+            "alias": "GC_Exception",
+            "show": false
+          },
+          {
+            "name": "Shape__Area",
+            "alias": "Shape__Area",
+            "show": false,
+            "format": {
+              "places": 6,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 6,
+              "digitSeparator": false
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID",
+      "isDescending": false
+    },
+    {
+      "name": "Water Hydrants",
+      "id": "All_Aktivov_gdb_2966",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/16",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Make",
+            "alias": "Make",
+            "show": true
+          },
+          {
+            "name": "Model",
+            "alias": "Model",
+            "show": true
+          },
+          {
+            "name": "INSTALLYR",
+            "alias": "INSTALLYR",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "NumPorts",
+            "alias": "NumPorts",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Type",
+            "alias": "Type",
+            "show": true
+          },
+          {
+            "name": "Storz",
+            "alias": "Storz",
+            "show": true
+          },
+          {
+            "name": "FootValve",
+            "alias": "FootValve",
+            "show": true
+          },
+          {
+            "name": "Condition",
+            "alias": "Condition",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "Location",
+            "alias": "Location",
+            "show": true
+          },
+          {
+            "name": "Picture",
+            "alias": "Picture",
+            "show": true
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "EditDate",
+            "alias": "EditDate",
+            "show": true
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "PaintYear",
+            "alias": "PaintYear",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GRID",
+            "alias": "GRID",
+            "show": true
+          },
+          {
+            "name": "STATUS",
+            "alias": "STATUS",
+            "show": true
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true
+          },
+          {
+            "name": "GlobalID_2",
+            "alias": "GlobalID_2",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID_1",
+      "isDescending": false
+    },
+    {
+      "name": "Water Connections",
+      "id": "All_Aktivov_gdb_1692",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/20",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "INSTALLYR",
+            "alias": "INSTALLYR",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "TYPE_CODE",
+            "alias": "TYPE_CODE",
+            "show": true
+          },
+          {
+            "name": "STATUS",
+            "alias": "STATUS",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Material",
+            "alias": "Material",
+            "show": true
+          },
+          {
+            "name": "Diameter",
+            "alias": "Diameter",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "MUNIS_ACCT",
+            "alias": "MUNIS_ACCT",
+            "show": true
+          },
+          {
+            "name": "PZONE_CODE",
+            "alias": "PZONE_CODE",
+            "show": true
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID_2",
+            "alias": "GlobalID_2",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID_1",
+      "isDescending": false
+    },
+    {
+      "name": "Sewer Manholes",
+      "id": "All_Aktivov_gdb_9740",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/9",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "STRC_ID",
+            "alias": "STRC_ID",
+            "show": true
+          },
+          {
+            "name": "OWNER_CODE",
+            "alias": "OWNER_CODE",
+            "show": true
+          },
+          {
+            "name": "CITY_CODE",
+            "alias": "CITY_CODE",
+            "show": true
+          },
+          {
+            "name": "RIMELEV",
+            "alias": "RIMELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "DROP_CODE",
+            "alias": "DROP_CODE",
+            "show": true
+          },
+          {
+            "name": "DROP_ELEV",
+            "alias": "DROP_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "OUT_ELEV",
+            "alias": "OUT_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "SHEETNO",
+            "alias": "SHEETNO",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "AncillaryR",
+            "alias": "AncillaryR",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Old_FAC_ID",
+            "alias": "Old_FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "AssetStatu",
+            "alias": "AssetStatu",
+            "show": true
+          },
+          {
+            "name": "Photo",
+            "alias": "Photo",
+            "show": true
+          },
+          {
+            "name": "Condition",
+            "alias": "Condition",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "VW_Easemen",
+            "alias": "VW_Easemen",
+            "show": true
+          },
+          {
+            "name": "InstallYea",
+            "alias": "InstallYea",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "GRID",
+            "alias": "GRID",
+            "show": true
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "GlobalID_2",
+            "alias": "GlobalID_2",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID_1",
+      "isDescending": false
+    },
+    {
+      "name": "Sewer Connections",
+      "id": "All_Aktivov_gdb_3146",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/10",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "TYPE_CODE",
+            "alias": "TYPE_CODE",
+            "show": true
+          },
+          {
+            "name": "PARCELNO",
+            "alias": "PARCELNO",
+            "show": true
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "ADDR_ID",
+            "alias": "ADDR_ID",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "AssetStatu",
+            "alias": "AssetStatu",
+            "show": true
+          },
+          {
+            "name": "CITY_CODE",
+            "alias": "CITY_CODE",
+            "show": true
+          },
+          {
+            "name": "Condition",
+            "alias": "Condition",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Sink",
+            "alias": "Sink",
+            "show": true
+          },
+          {
+            "name": "InstallYea",
+            "alias": "InstallYea",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID_2",
+            "alias": "GlobalID_2",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID_1",
+      "isDescending": false
+    },
+    {
+      "name": "Storm Catch Basins",
+      "id": "All_Aktivov_gdb_9732",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/4",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "STRC_ID",
+            "alias": "STRC_ID",
+            "show": true
+          },
+          {
+            "name": "TYPE_CODE",
+            "alias": "TYPE_CODE",
+            "show": true
+          },
+          {
+            "name": "MAT_CODE",
+            "alias": "MAT_CODE",
+            "show": true
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SED_2010",
+            "alias": "SED_2010",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SED_2005",
+            "alias": "SED_2005",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "AncillaryR",
+            "alias": "AncillaryR",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Strm_Mrkr",
+            "alias": "Strm_Mrkr",
+            "show": true
+          },
+          {
+            "name": "StormFilte",
+            "alias": "StormFilte",
+            "show": true
+          },
+          {
+            "name": "OwnerCode",
+            "alias": "OwnerCode",
+            "show": true
+          },
+          {
+            "name": "CITY_CODE",
+            "alias": "CITY_CODE",
+            "show": true
+          },
+          {
+            "name": "AssetStatu",
+            "alias": "AssetStatu",
+            "show": true
+          },
+          {
+            "name": "RIMELEV",
+            "alias": "RIMELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GrateShape",
+            "alias": "GrateShape",
+            "show": false
+          },
+          {
+            "name": "GrateMat",
+            "alias": "GrateMat",
+            "show": true
+          },
+          {
+            "name": "CurbInlet",
+            "alias": "CurbInlet",
+            "show": true
+          },
+          {
+            "name": "InstallYea",
+            "alias": "InstallYea",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Easement",
+            "alias": "Easement",
+            "show": true
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "Rotation",
+            "alias": "Rotation",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GRID",
+            "alias": "GRID",
+            "show": true
+          },
+          {
+            "name": "Lat",
+            "alias": "Lat",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Long",
+            "alias": "Long",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Adopted",
+            "alias": "Adopted",
+            "show": true
+          },
+          {
+            "name": "Name",
+            "alias": "Name",
+            "show": true
+          },
+          {
+            "name": "Email",
+            "alias": "Email",
+            "show": true
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "GlobalID_2",
+            "alias": "GlobalID_2",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID_1",
+      "isDescending": false
+    },
+    {
+      "name": "Storm Manholes",
+      "id": "All_Aktivov_gdb_3656",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/1",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "STRC_ID",
+            "alias": "STRC_ID",
+            "show": true
+          },
+          {
+            "name": "TYPE_CODE",
+            "alias": "TYPE_CODE",
+            "show": true
+          },
+          {
+            "name": "MAT_CODE",
+            "alias": "MAT_CODE",
+            "show": true
+          },
+          {
+            "name": "RIMELEV",
+            "alias": "RIMELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "RIMTOBASE",
+            "alias": "RIMTOBASE",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "OUT_ELEV",
+            "alias": "OUT_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "IN1_ELEV",
+            "alias": "IN1_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "IN2_ELEV",
+            "alias": "IN2_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "IN3_ELEV",
+            "alias": "IN3_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SED_2010",
+            "alias": "SED_2010",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SED_2005",
+            "alias": "SED_2005",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "AncillaryR",
+            "alias": "AncillaryR",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Strm_Mrkr",
+            "alias": "Strm_Mrkr",
+            "show": true
+          },
+          {
+            "name": "CITY_CODE",
+            "alias": "CITY_CODE",
+            "show": true
+          },
+          {
+            "name": "AssetStatu",
+            "alias": "AssetStatu",
+            "show": true
+          },
+          {
+            "name": "OwnerCode",
+            "alias": "OwnerCode",
+            "show": true
+          },
+          {
+            "name": "GrateShape",
+            "alias": "GrateShape",
+            "show": false
+          },
+          {
+            "name": "GrateMat",
+            "alias": "GrateMat",
+            "show": true
+          },
+          {
+            "name": "InstallYea",
+            "alias": "InstallYea",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Easement",
+            "alias": "Easement",
+            "show": true
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "GRID",
+            "alias": "GRID",
+            "show": true
+          },
+          {
+            "name": "STATUS",
+            "alias": "STATUS",
+            "show": true
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "GlobalID_2",
+            "alias": "GlobalID_2",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID_1",
+      "isDescending": false
+    },
+    {
+      "name": "Water Mains",
+      "id": "All_Aktivov_gdb_2175",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/22",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "LAYER",
+            "alias": "LAYER",
+            "show": true
+          },
+          {
+            "name": "INSTALLYR",
+            "alias": "INSTALLYR",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CITY_CODE",
+            "alias": "CITY_CODE",
+            "show": true
+          },
+          {
+            "name": "DIA_CODE",
+            "alias": "DIA_CODE",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MAT_CODE",
+            "alias": "MAT_CODE",
+            "show": true
+          },
+          {
+            "name": "PZONE_CODE",
+            "alias": "PZONE_CODE",
+            "show": true
+          },
+          {
+            "name": "MODEL_ID",
+            "alias": "MODEL_ID",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "STATUS",
+            "alias": "STATUS",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "MAIN_TYPE",
+            "alias": "MAIN_TYPE",
+            "show": true
+          },
+          {
+            "name": "GRID",
+            "alias": "GRID",
+            "show": true
+          },
+          {
+            "name": "DrawingPDF",
+            "alias": "DrawingPDF",
+            "show": true
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID_2",
+            "alias": "GlobalID_2",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID_1",
+      "isDescending": false
+    },
+    {
+      "name": "Sewer Mains",
+      "id": "All_Aktivov_gdb_7250",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/8",
+        "fields": [
+          {
+            "name": "OBJECTID_1",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "OWNER_CODE",
+            "alias": "OWNER_CODE",
+            "show": true
+          },
+          {
+            "name": "CITY_CODE",
+            "alias": "CITY_CODE",
+            "show": true
+          },
+          {
+            "name": "DIA_CODE",
+            "alias": "DIA_CODE",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MAT_CODE",
+            "alias": "MAT_CODE",
+            "show": true
+          },
+          {
+            "name": "SLOPE",
+            "alias": "SLOPE",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "UP_ELEV",
+            "alias": "UP_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "DN_ELEV",
+            "alias": "DN_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "IS_FORCE",
+            "alias": "IS_FORCE",
+            "show": true
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "SHEETNO",
+            "alias": "SHEETNO",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true
+          },
+          {
+            "name": "Enabled",
+            "alias": "Enabled",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Split",
+            "alias": "Split",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SplitDate",
+            "alias": "SplitDate",
+            "show": true
+          },
+          {
+            "name": "SplitOldAs",
+            "alias": "SplitOldAs",
+            "show": true
+          },
+          {
+            "name": "AssetStatu",
+            "alias": "AssetStatu",
+            "show": true
+          },
+          {
+            "name": "Sink",
+            "alias": "Sink",
+            "show": true
+          },
+          {
+            "name": "InstallYea",
+            "alias": "InstallYea",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "DRAWING",
+            "alias": "DRAWING",
+            "show": true
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID_2",
+            "alias": "GlobalID_2",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID_1",
+      "isDescending": false
+    },
+    {
+      "name": "Sewer_CleanOut",
+      "id": "Sewer_CleanOut_3289",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/Sewer_CleanOut/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "STRC_ID",
+            "alias": "STRC_ID",
+            "show": true
+          },
+          {
+            "name": "OWNER_CODE",
+            "alias": "OWNER_CODE",
+            "show": true
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Old_FAC_ID",
+            "alias": "Old_FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Condition",
+            "alias": "Condition",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "InstallYea",
+            "alias": "InstallYea",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "FID",
+      "isDescending": false
+    },
+    {
+      "name": "Storm Mains",
+      "id": "All_Aktivov_gdb_2056",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/All_Aktivov_gdb/FeatureServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "BASIN_CODE",
+            "alias": "BASIN_CODE",
+            "show": true
+          },
+          {
+            "name": "OWNER_CODE",
+            "alias": "OWNER_CODE",
+            "show": true
+          },
+          {
+            "name": "DIA_CODE",
+            "alias": "DIA_CODE",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MAT_CODE",
+            "alias": "MAT_CODE",
+            "show": true
+          },
+          {
+            "name": "UP_ELEV",
+            "alias": "UP_ELEV",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "COMMENTS",
+            "alias": "COMMENTS",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "IS_DETENT",
+            "alias": "IS_DETENT",
+            "show": true
+          },
+          {
+            "name": "CITY_CODE",
+            "alias": "CITY_CODE",
+            "show": true
+          },
+          {
+            "name": "AssetStatu",
+            "alias": "AssetStatu",
+            "show": true
+          },
+          {
+            "name": "NumPipes",
+            "alias": "NumPipes",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Width",
+            "alias": "Width",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Height",
+            "alias": "Height",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Split",
+            "alias": "Split",
+            "show": true
+          },
+          {
+            "name": "SplitDate",
+            "alias": "SplitDate",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "SplitOldAs",
+            "alias": "SplitOldAs",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "TankLength",
+            "alias": "TankLength",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "InstallYea",
+            "alias": "InstallYea",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "InCreek",
+            "alias": "InCreek",
+            "show": true
+          },
+          {
+            "name": "Culvert",
+            "alias": "Culvert",
+            "show": true
+          },
+          {
+            "name": "Shape_STLe",
+            "alias": "Shape_STLe",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GRID",
+            "alias": "GRID",
+            "show": true
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "DRAWING",
+            "alias": "DRAWING",
+            "show": true
+          },
+          {
+            "name": "ASSET_ID",
+            "alias": "ASSET_ID",
+            "show": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": false
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID",
+      "isDescending": false
+    },
+    {
+      "name": "CenterlineTrans_Nov2021",
+      "id": "CenterlineTrans_Nov2021_7350",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/CenterlineTrans_Nov2021/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "CFCC",
+            "alias": "CFCC",
+            "show": true
+          },
+          {
+            "name": "FDPRE",
+            "alias": "FDPRE",
+            "show": true
+          },
+          {
+            "name": "FDSUF",
+            "alias": "FDSUF",
+            "show": true
+          },
+          {
+            "name": "FNAME",
+            "alias": "FNAME",
+            "show": true
+          },
+          {
+            "name": "FTYPE",
+            "alias": "FTYPE",
+            "show": true
+          },
+          {
+            "name": "HIGHWAY_NU",
+            "alias": "HIGHWAY_NU",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MAJRD_TYPE",
+            "alias": "MAJRD_TYPE",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "STREET_NAM",
+            "alias": "STREET_NAM",
+            "show": true
+          },
+          {
+            "name": "IsTruckRte",
+            "alias": "IsTruckRte",
+            "show": true
+          },
+          {
+            "name": "StreetFKey",
+            "alias": "StreetFKey",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "PWSpray",
+            "alias": "PWSpray",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "PWSnow",
+            "alias": "PWSnow",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "PWDeice",
+            "alias": "PWDeice",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "PWSnowEW",
+            "alias": "PWSnowEW",
+            "show": true
+          },
+          {
+            "name": "PWChipSeal",
+            "alias": "PWChipSeal",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FedRoadCla",
+            "alias": "FedRoadCla",
+            "show": true
+          },
+          {
+            "name": "SPEED",
+            "alias": "SPEED",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "IsOneWay",
+            "alias": "IsOneWay",
+            "show": true
+          },
+          {
+            "name": "FAC_ID",
+            "alias": "FAC_ID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "BikeLanes",
+            "alias": "BikeLanes",
+            "show": true
+          },
+          {
+            "name": "Lanes",
+            "alias": "Lanes",
+            "show": true
+          },
+          {
+            "name": "PavementAr",
+            "alias": "PavementAr",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "RPM_Type",
+            "alias": "RPM_Type",
+            "show": true
+          },
+          {
+            "name": "RPM_Cond",
+            "alias": "RPM_Cond",
+            "show": true
+          },
+          {
+            "name": "Marking_Ty",
+            "alias": "Marking_Ty",
+            "show": true
+          },
+          {
+            "name": "Ownership",
+            "alias": "Ownership",
+            "show": true
+          },
+          {
+            "name": "Condition",
+            "alias": "Condition",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "VW_Segment",
+            "alias": "VW_Segment",
+            "show": true
+          },
+          {
+            "name": "SchoolZone",
+            "alias": "SchoolZone",
+            "show": true
+          },
+          {
+            "name": "Thermo_Mar",
+            "alias": "Thermo_Mar",
+            "show": true
+          },
+          {
+            "name": "Thermo_Num",
+            "alias": "Thermo_Num",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MLTRoadCla",
+            "alias": "MLTRoadCla",
+            "show": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "FID",
+      "isDescending": false
+    },
+    {
+      "name": "SnoCo Parcels",
+      "id": "SnoCo_Pcl_Latest_Nov2021_for_AGOL_9360",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/SnoCo_Pcl_Latest_Nov2021_for_AGOL/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "PARCEL_ID",
+            "alias": "PARCEL_ID",
+            "show": true
+          },
+          {
+            "name": "PAR_OID",
+            "alias": "PAR_OID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "LRSN",
+            "alias": "LRSN",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "TAX_YEAR",
+            "alias": "TAX_YEAR",
+            "show": true
+          },
+          {
+            "name": "STATUS",
+            "alias": "STATUS",
+            "show": true
+          },
+          {
+            "name": "SOURCE",
+            "alias": "SOURCE",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "COMMENT",
+            "alias": "COMMENT",
+            "show": true
+          },
+          {
+            "name": "GIS_SQ_FT",
+            "alias": "GIS_SQ_FT",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GIS_ACRES",
+            "alias": "GIS_ACRES",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "TAB_ACRES",
+            "alias": "TAB_ACRES",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "TCANUMBER",
+            "alias": "TCANUMBER",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "USECODE",
+            "alias": "USECODE",
+            "show": true
+          },
+          {
+            "name": "TVR",
+            "alias": "TVR",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MKIMP",
+            "alias": "MKIMP",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MKLND",
+            "alias": "MKLND",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "MKTTL",
+            "alias": "MKTTL",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "XMPTDESCR",
+            "alias": "XMPTDESCR",
+            "show": true
+          },
+          {
+            "name": "SITUSLINE1",
+            "alias": "SITUSLINE1",
+            "show": true
+          },
+          {
+            "name": "SITUSCITY",
+            "alias": "SITUSCITY",
+            "show": true
+          },
+          {
+            "name": "SITUSZIP",
+            "alias": "SITUSZIP",
+            "show": true
+          },
+          {
+            "name": "TAXPRNAME",
+            "alias": "TAXPRNAME",
+            "show": true
+          },
+          {
+            "name": "TAXPRLINE1",
+            "alias": "TAXPRLINE1",
+            "show": true
+          },
+          {
+            "name": "TAXPRLINE2",
+            "alias": "TAXPRLINE2",
+            "show": true
+          },
+          {
+            "name": "TAXPRCITY",
+            "alias": "TAXPRCITY",
+            "show": true
+          },
+          {
+            "name": "TAXPRSTATE",
+            "alias": "TAXPRSTATE",
+            "show": true
+          },
+          {
+            "name": "TAXPRZIP",
+            "alias": "TAXPRZIP",
+            "show": true
+          },
+          {
+            "name": "OWNERNAME",
+            "alias": "OWNERNAME",
+            "show": true
+          },
+          {
+            "name": "OWNERLINE1",
+            "alias": "OWNERLINE1",
+            "show": true
+          },
+          {
+            "name": "OWNERLINE2",
+            "alias": "OWNERLINE2",
+            "show": true
+          },
+          {
+            "name": "OWNERCITY",
+            "alias": "OWNERCITY",
+            "show": true
+          },
+          {
+            "name": "OWNERSTATE",
+            "alias": "OWNERSTATE",
+            "show": true
+          },
+          {
+            "name": "OWNERZIP",
+            "alias": "OWNERZIP",
+            "show": true
+          },
+          {
+            "name": "X_COORD",
+            "alias": "X_COORD",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Y_COORD",
+            "alias": "Y_COORD",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SIDESEWER",
+            "alias": "SIDESEWER",
+            "show": true
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape_Area",
+            "alias": "Shape_Area",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "CREATEDATE",
+            "alias": "CREATEDATE",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "SITUSHOUSE",
+            "alias": "SITUSHOUSE",
+            "show": true
+          },
+          {
+            "name": "SEWERDISTR",
+            "alias": "SEWERDISTR",
+            "show": true
+          },
+          {
+            "name": "SnoCoPropL",
+            "alias": "SnoCoPropL",
+            "show": true
+          },
+          {
+            "name": "lat",
+            "alias": "lat",
+            "show": true
+          },
+          {
+            "name": "long",
+            "alias": "long",
+            "show": true
+          },
+          {
+            "name": "BirdEye",
+            "alias": "BirdEye",
+            "show": true
+          },
+          {
+            "name": "Shape__Area",
+            "alias": "Shape__Area",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "FID",
+      "isDescending": false
+    },
+    {
+      "name": "Generalize_LINES_parcels",
+      "id": "Generalize_LINES_parcels_1585",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/Generalize_LINES_parcels/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "length",
+            "alias": "length",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "FID",
+      "isDescending": false
+    },
+    {
+      "name": "Cont2Ft",
+      "id": "Cont2Ft_3610",
+      "layer": {
+        "url": "https://services.arcgis.com/efPDmjgxOd3NdvZV/arcgis/rest/services/Cont2Ft/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": false
+          },
+          {
+            "name": "Elevation",
+            "alias": "Elevation",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "IsIndex",
+            "alias": "IsIndex",
+            "show": true
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": true
+          },
+          {
+            "name": "Edit_Date",
+            "alias": "Edit_Date",
+            "show": true,
+            "format": {
+              "dateFormat": "shortDateShortTime"
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": true
+          },
+          {
+            "name": "Shape_Leng",
+            "alias": "Shape_Leng",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "FID",
+      "isDescending": false
+    },
+    {
+      "name": "Map",
+      "id": "KingCo_Aerial_2019_4958_0",
+      "layer": {
+        "url": "https://gismaps.kingcounty.gov/arcgis/rest/services/BaseMaps/KingCo_Aerial_2019/MapServer/0"
+      },
+      "show": null,
+      "showAttachments": false,
+      "sortField": "OBJECTID",
+      "isDescending": false
+    }
+  ],
+  "table": {
+    "pageSizeOptions": [
+      25,
+      50,
+      100,
+      1000
+    ]
+  },
+  "hideExportButton": true,
+  "initiallyExpand": false,
+  "filterByMapExtent": true,
+  "allowTextSelection": true,
+  "syncWithLayers": true
+}
