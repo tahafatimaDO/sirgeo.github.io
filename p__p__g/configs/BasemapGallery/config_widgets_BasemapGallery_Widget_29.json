@@ -1,0 +1,31 @@
+{
+  "basemapGallery": {
+    "mode": 2,
+    "basemaps": [
+      {
+        "title": "2019 Aerials - King County",
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_29_1_1652991120136.png",
+        "layers": [
+          {
+            "url": "https://gismaps.kingcounty.gov/arcgis/rest/services/BaseMaps/KingCo_Aerial_2019/MapServer"
+          }
+        ],
+        "spatialReference": {
+          "wkid": 102100
+        }
+      },
+      {
+        "title": "2021 Aerials King County",
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img_widgets_BasemapGallery_Widget_29_2_1652991120150.png",
+        "layers": [
+          {
+            "url": "https://gismaps.kingcounty.gov/arcgis/rest/services/BaseMaps/KingCo_Aerial_2021/MapServer"
+          }
+        ],
+        "spatialReference": {
+          "wkid": 102100
+        }
+      }
+    ]
+  }
+}
